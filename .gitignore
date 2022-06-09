@@ -4,6 +4,9 @@
 # Log file
 *.log
 
+#Project Files
+newspage
+
 # Package Files #
 *.war
 *.nar
