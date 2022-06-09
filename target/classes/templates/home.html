@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragment/head :: head"></head>
+<head>
+    <title>R(h)ein Ge Schaut - Schülerzeitung</title>
+    <link href="" rel="stylesheet" th:href="@{/css/home.css}">
+</head>
+
+<body>
+<nav th:replace="fragment/navigation :: navbar"></nav>
+
+<div id="header" th:style="'background-image: url(/image/banner.png);'">
+    <div class="overlay">
+        <div class="textCenter">
+            <div id="title">
+                <p>R(h)ein Ge Schaut</p>
+            </div>
+            <div id="subTitle">
+                <p>Die erste Schülerzeitung des RGS seit langem!</p>
+            </div>
+
+            <div id="domainBox">
+                <label for="serverDomain"></label><input id="serverDomain" name="serverDomain"
+                                                         readonly type="text" value="Nächste Veröffentlichung am: 12.12.2022">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contentContainer">
+    <div class="row">
+        <p class="title">Nächste Veröffentlichung am:</p>
+        <p class="sub-title">5.12.2022</p>
+        <p class="sub-title" >Noch countdown übrig</p>
+    </div>
+
+    <div id =""></div>
+
+
+
+    <div id="footer">
+        <p>Copyright 2022 | Clemens Robrecht</p>
+    </div>
+</div>
+
+</body>
+
+</html>

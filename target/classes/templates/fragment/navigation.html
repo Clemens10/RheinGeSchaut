@@ -1,0 +1,46 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body th:fragment="navbar">
+<nav>
+  <input id="nav-toggle" type="checkbox">
+
+  <div class="logo">
+    <a href="/home"><img alt="logo" draggable="false" src="" th:src="@{/image/logo-1024.png}"></a>
+  </div>
+
+  <ul class="links">
+    <li href="/home"><a>Arktikel</a></li>
+    <li href=""><a>Unsere Authoren</a></li>
+    <li href=""><a>Über uns</a></li>
+    <li class="button" onclick="startAuth()"><a>Einloggen</a></li>
+  </ul>
+
+  <label class="icon-burger" for="nav-toggle">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </label>
+</nav>
+
+<div draggable="false" id="auth-overlay" onclick="stopAuth()"></div>
+<div id="auth-popup">
+  <a id="login-title">Login</a>
+  <a id="register-title">Register</a>
+
+  <form id="login-form">
+    <input class="username" placeholder="Username" type="text">
+    <input class="password" placeholder="Password" type="password">
+    <input class="button" type="button" value="Login">
+  </form>
+  <a id="register-link">Du hast noch keinen Account? <label onclick="setAuthType('register')">Jetzt Registrieren!</label></a>
+
+  <form action="#" id="register-form" method="post" th:action="@{/auth/register}" th:object="${registrationUser}">
+    <input class="email" placeholder="Email" th:field="*{email}" type="email">
+    <input class="username" placeholder="Username" th:field="*{username}" type="text">
+    <input class="password" placeholder="Password" th:field="*{password}" type="password">
+    <input class="verify-password" placeholder="Verify password" th:field="*{verifyPassword}" type="password">
+    <input class="button" type="submit" value="Register">
+  </form>
+  <a id="login-link">Schon registriert? <label onclick="setAuthType('login')">Jetzt Einloggen!</label></a>
+</div>
+</body>
+</html>
