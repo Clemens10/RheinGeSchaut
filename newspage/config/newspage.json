@@ -1,0 +1,13 @@
+{
+  "newspage": {
+    "title1": "Fisch ist ertrunken!",
+    "preview1": "images/preview1.png",
+    "fileLink1": "127.0.0.1/home",
+    "title2": "Neu Schülerzeitung",
+    "preview2": "\"images/preview2.png\"",
+    "fileLink2": "127.0.0.1/page1",
+    "title3": "unused",
+    "preview3": "unused",
+    "fileLink3": "unused"
+  }
+}
