@@ -1,0 +1,13 @@
+de\clemens\controller\AuthController.class
+de\clemens\util\auth\RegistrationUtil.class
+de\clemens\util\database\DatabaseConnectionUtil.class
+de\clemens\controller\HomeController.class
+de\clemens\json\files\ArticleJsonFile.class
+de\clemens\util\auth\RegistrationUser.class
+de\clemens\json\files\link\PictureLink.class
+de\clemens\json\files\NewsPageJsonFile.class
+de\clemens\util\ServerInfoUtil.class
+de\clemens\util\database\DatabaseUtil.class
+de\clemens\json\jsonlib\Config.class
+de\clemens\Website.class
+de\clemens\json\jsonlib\JsonConfig.class
