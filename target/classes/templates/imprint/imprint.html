@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragment/head :: head"></head>
+<head>
+    <title>R(h)ein Ge Schaut - Impressum</title>
+    <link rel="stylesheet" th:rel="stylesheet" th:href="@{/css/imprint/imprint.css}">
+</head>
+<body>
+<nav th:replace="fragment/navigation :: nav"></nav>
+
+<div id="header" th:style="'background-image: url(/image/imprint.png);'">
+    <div class="overlay">
+        <div class="textCenter">
+            <div id="title">
+                <p>Impressum</p>
+            </div>
+            <div id="subTitle">
+                <p>Kontaktiert uns hier!</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="contentContainer">
+    <div class="overlay" >
+        <div class="textCenter">
+            <div id="subInfo">
+                <p>Email: development@clemens-robrecht.de</p>
+                <p>Webseiteninhaber: Clemens Tristan Robrecht</p>
+            </div>
+        </div>
+    </div>
+<div id="footer">
+    <p>Copyright 2022 | Clemens Robrecht</p>
+</div>
+</body>
+</html>

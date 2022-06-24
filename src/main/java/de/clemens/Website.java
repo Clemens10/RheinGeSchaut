@@ -38,7 +38,7 @@ public class Website {
                            "|    /| '_ \\ / _ \\ | '_ \\  | | __ / _ \\  `--. \\/ __| '_ \\ / _` | | | | __|\n" +
                            "| |\\ \\| | | |  __/ | | | | | |_\\ \\  __/ /\\__/ / (__| | | | (_| | |_| | |_ \n" +
                            "\\_| \\_|_| |_|\\___|_|_| |_|  \\____/\\___| \\____/ \\___|_| |_|\\__,_|\\__,_|\\__|\n" +
-                           " Entwickelt von Clemens Robrecht (development.clemens.robrecht@clemens.de)                                                                         \n" +
+                           " Entwickelt von Clemens Robrecht (development@clemens-robrecht.de)                                                                         \n" +
                            "                                                                          ");
         System.out.println("Schuelerzeitung des RGS");
         System.out.println("[+] Website enabled!");

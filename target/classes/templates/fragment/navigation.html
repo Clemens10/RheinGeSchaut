@@ -10,7 +10,7 @@
   <ul class="links">
     <li href="/home"><a>Arktikel</a></li>
     <li href=""><a>Unsere Autoren</a></li>
-    <li href=""><a>Über uns</a></li>
+    <li href="/home"><a href="/imprint">Über uns</a></li>
     <li class="button" onclick="startAuth()"><a>Einloggen</a></li>
   </ul>
 
@@ -24,7 +24,7 @@
 <div draggable="false" id="auth-overlay" onclick="stopAuth()"></div>
 <div id="auth-popup">
   <a id="login-title">Login</a>
-  <a id="register-title">Register</a>
+  <a id="register-title">Registrieren</a>
 
   <form id="login-form">
     <input class="username" placeholder="Username" type="text">
@@ -38,8 +38,9 @@
     <input class="username" placeholder="Username" th:field="*{username}" type="text">
     <input class="password" placeholder="Password" th:field="*{password}" type="password">
     <input class="verify-password" placeholder="Verify password" th:field="*{verifyPassword}" type="password">
-    <input class="button" type="submit" value="Register">
+    <input class="button" type="submit" value="Registrieren">
   </form>
+
   <a id="login-link">Schon registriert? <label onclick="setAuthType('login')">Jetzt Einloggen!</label></a>
 </div>
 </body>
