@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ReadingSampleController {
 
-    @GetMapping("/reading-sample")
-    public String getter() {
-        return "sample";
+    @GetMapping("sample")
+    public String a() {
+        return "sample/sample";
     }
 }
